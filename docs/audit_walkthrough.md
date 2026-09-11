@@ -13,13 +13,13 @@
 | :--- | :--- | :--- | :--- | :--- |
 | **Pillar 1: Scientific Correctness** | Equations, constraints, distributions, 5 methods, metrics | Analytical fixtures, 1,800-rep M1 equivalence, zero false passes | 15 / 15 tests passed ($100\%$) | **PASS** |
 | **Pillar 2: Deterministic Reproducibility** | RNG hierarchical stream (`master -> cell -> rep`) | Bitwise identical arrays across runs | Identical output verified across random seeds | **PASS** |
-| **Pillar 3: Historical Reproduction** | Full 2,100 primary cells ($R=1,000$) & 900 rho cells ($R=500$) | Frozen audited headline stability & Friedman statistics | Within documented numerical tolerances ($\Delta < 0.007$) | **PASS** |
+| **Pillar 3: Historical Reproduction** | Full 2,100 primary cells ($R=1,000$) & 900 rho cells ($R=500$) | Frozen audited headline stability & Friedman statistics | Within documented numerical tolerances ($\Delta < 0.007$ for method stability) | **PASS** |
 
 ---
 
 ## 2. Historical Numerical Reproduction Audit (Pillar 3)
 
-The primary simulation was executed across all **2,100 factorial cells** with **$R = 1,000$ replications per cell** (2,100,000 cohort evaluations across 5 methods). The results were compared against the frozen audited baseline stored in `config/reproducibility.yaml`:
+The primary simulation was executed across all **2,100 factorial cells** with **$R = 1,000$ replications per cell** (2,100,000 cohort evaluations). The results were compared against the frozen audited baseline stored in `config/reproducibility.yaml`:
 
 ```text
 ========================================
@@ -71,10 +71,10 @@ STATUS: PASS
    - Lower $U(0, 5)$, Upper $U(95, 100)$ applied to both $I$ and $E$, recomputing $X$.
 4. **Grading Methods & Grade Assignment**:
    - M1: Sample SD ($ddof=1$), frozen $k$-vector, competency overlay $B_7^* = \max(\mu - 1.5s, CE)$.
-   - M2: Empirical Hyndman-Fan Type 7 quantiles ($p = [0.933193, \dots, 0.066807]$).
+   - M2: Empirical Hyndman-Fan Type 7 quantiles ($p = [0.933193, \dots, 0.066807]$), calibrated to the M1 reference probabilities.
    - M3: Partition of observed eligible range $\Delta = (X_{\max} - X_{\min}) / 7$.
-   - M4: Direct anchoring $B_7 = CE, S_a = X_{\max}$.
-   - M5: Median and scaled MAD ($\sigma_R = 1.4826 \times MAD$).
+   - M4: Study-specific computational operationalization anchoring the lower boundary to $CE$.
+   - M5: Median and scaled MAD ($\sigma_R = 1.4826 \times MAD$), used as a proposed robust comparator.
    - Exact boundary convention: exact boundary receives the higher grade ($\ge$).
 5. **M1 / M1-C Equivalence**:
    - Tested on 1,800 matched replications across sizes and distributions: discrepancy $= 0.0$, 0 grade mismatches, 0 false passes.
@@ -100,7 +100,7 @@ STATUS: PASS
 - `results/rho_sensitivity/rho_tables.xlsx`
 - `results/statistical_analysis/friedman.csv`
 - `results/statistical_analysis/pairwise.csv` (Wilcoxon tests with Holm correction)
-- `results/statistical_analysis/bootstrap.csv` (Paired bootstrap 95% CIs)
+- `results/statistical_analysis/bootstrap.csv` (Paired bootstrap 95% CIs; current executable default: 2,000 resamples)
 - `results/statistical_analysis/moderation.csv` (HC3 robust regression)
 - `results/statistical_analysis/diagnostics.csv` (Breusch-Pagan, skew, kurtosis, Cook's D)
 - `results/validation/audit_report.txt`
@@ -119,5 +119,12 @@ STATUS: PASS
 
 ## 6. Archival Verification & Checksums
 
-- All 85 code, configuration, data, and figure assets have been fingerprinted in [reproducibility_manifest.json](file:///g:/Project/Relative%20Grading/EJEE/Code/relative_grading_simulation/reproducibility_manifest.json) and [checksums.sha256](file:///g:/Project/Relative%20Grading/EJEE/Code/relative_grading_simulation/checksums.sha256).
-- The package satisfies all 15 Zenodo-deposition deliverables defined in Section 26 of the Developer Code Architecture.
+The repository's generated manifest and checksum files are archival integrity records and must be regenerated after the final repository edits are complete. At the time of this audit, earlier manifest/checksum records predate the current documentation cleanup and are therefore not yet the final release fingerprints.
+
+See [`reproducibility_manifest.json`](../reproducibility_manifest.json) and [`checksums.sha256`](../checksums.sha256) after the final freeze.
+
+---
+
+## 7. Audit Scope Note
+
+This audit report records the completed computational audit performed on September 11, 2026. It does not replace a fresh clean-environment execution after later repository documentation edits; that final release check remains a publication-freeze task.
