@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11 15:47:48",
+  "generated_at": "2026-09-11 16:06:20",
   "platform": "Windows-10-10.0.19045-SP0",
   "python_version": "3.12.0",
   "total_files": 96,
@@ -256,8 +256,8 @@
     },
     {
       "path": "scripts/generate_manifest.py",
-      "sha256": "c1de72b460e54028f5042e4a5f4c8dc6377ce0ac564b66e12aae31f1966d80ea",
-      "size_bytes": 2451
+      "sha256": "f4e3fd764c0ac9f6ceade465e40788f4c2a742a050d33281ba01fc2adc682f13",
+      "size_bytes": 2768
     },
     {
       "path": "scripts/run_primary.py",
