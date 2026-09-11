@@ -7,7 +7,7 @@ name = "relative_grading_simulation"
 version = "1.0.0"
 description = "Reproducible simulation framework for robust relative grading in engineering education"
 authors = [
-    { name = "Research Team" }
+    { name = "Daipayan Mandal" }
 ]
 readme = "README.md"
 requires-python = ">=3.10"
