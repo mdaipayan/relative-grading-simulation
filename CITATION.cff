@@ -1,7 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the associated study and this software release."
 authors:
-  - name: "Study authors"
+  - family-names: "Mandal"
+    given-names: "Daipayan"
 title: "Relative Grading Simulation Framework"
 version: 1.0.0
 date-released: 2026-09-11
