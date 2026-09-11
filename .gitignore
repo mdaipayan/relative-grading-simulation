@@ -2,14 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
 *.so
 
 # Distribution / packaging
 .Python
 build/
-develop-eggs/
 dist/
 downloads/
 eggs/
@@ -38,6 +35,7 @@ env/
 *.swo
 *~
 .DS_Store
+Thumbs.db
 
 # Testing and coverage
 .pytest_cache/
@@ -45,7 +43,13 @@ env/
 htmlcov/
 .tox/
 .nox/
+.mypy_cache/
+.ruff_cache/
 
-# Temporary and log files
+# Temporary and local files
 *.log
 scratch/
+results/_tmp/
+figures/_tmp/
+*.tmp
+.ipynb_checkpoints/
