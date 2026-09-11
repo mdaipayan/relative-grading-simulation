@@ -1,0 +1,63 @@
+# Primary Experimental Design Configuration (Frozen Step 7D)
+experiment_name: "primary_simulation"
+total_cells: 2100
+replications_per_cell: 1000
+reference_cohort_size: 100000
+
+cohort_sizes:
+  - 10
+  - 15
+  - 20
+  - 25
+  - 30
+  - 40
+  - 50
+  - 75
+  - 100
+  - 200
+
+distributions:
+  - "Normal"
+  - "Compressed Normal"
+  - "Uniform"
+  - "Right-skewed"
+  - "Left-skewed"
+  - "Bimodal"
+
+competency_thresholds:
+  - 10.0
+  - 15.0
+  - 20.0
+  - 25.0
+  - 30.0
+
+contamination:
+  epsilons:
+    - 0.0
+    - 0.01
+    - 0.05
+    - 0.10
+  directions:
+    lower:
+      low: 0.0
+      high: 5.0
+    upper:
+      low: 95.0
+      high: 100.0
+
+assessment:
+  weight_internal: 0.40
+  weight_external: 0.60
+  a_parameter: 0.42857142857142855  # 3/7
+
+methods:
+  - "MeanSD"
+  - "Percentile"
+  - "MaxMin"
+  - "QFactor"
+  - "MedianMAD"
+
+grid:
+  min_score: 0
+  max_score: 100
+  step: 1

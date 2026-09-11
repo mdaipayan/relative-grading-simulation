@@ -1,0 +1,443 @@
+{
+  "generated_at": "2026-09-11 12:20:09",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python_version": "3.12.0",
+  "total_files": 87,
+  "files": [
+    {
+      "path": "CITATION.cff",
+      "sha256": "05dd7370841ddaa29233cc382cfc1c9f6933e5b340232964a68997ced5fdc49b",
+      "size_bytes": 506
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "e768ddabc47f7de40853812bd8aff82c2448c0f39a33a91786ce17162c2c2796",
+      "size_bytes": 681
+    },
+    {
+      "path": "README.md",
+      "sha256": "bf3c7b3f1fdc14598309d70504ffe0bef227022e3a505fe92e6ce0b0acfd124d",
+      "size_bytes": 3398
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "6682de1a0e42da590f4bcd38c415512676fcc0bead80ec1e83a3ea867480c6b7",
+      "size_bytes": 151
+    },
+    {
+      "path": "config/primary_design.yaml",
+      "sha256": "0f27db1e404ff754bbda5be4e2b70258642b016bd20259917139f6e764a3d26f",
+      "size_bytes": 856
+    },
+    {
+      "path": "config/reproducibility.yaml",
+      "sha256": "c9bde9ade5726f6359001fcf823fa7fecc1b6027ea8b883006a19550e515ae14",
+      "size_bytes": 376
+    },
+    {
+      "path": "config/rho_sensitivity.yaml",
+      "sha256": "cd1411b5f77f50754d95c17c2b74c63bfb9ee0cdc2a834014ffff2b064727d13",
+      "size_bytes": 797
+    },
+    {
+      "path": "docs/audit_walkthrough.md",
+      "sha256": "c188ffd1a3f2b2943a769951af73c90cecd04f91ff3af97c83c82f7549b7827f",
+      "size_bytes": 7436
+    },
+    {
+      "path": "docs/developer_code_architecture.md",
+      "sha256": "86ae89899d1fe686d0e7bf5a7a1a57e2ca5240e1243ee18d83280bd5c795ce14",
+      "size_bytes": 19030
+    },
+    {
+      "path": "docs/mathematical_specification.md",
+      "sha256": "52ee677b8fe524ada76f4797c67467ac97560f5910abe648426182aa252976f9",
+      "size_bytes": 1466
+    },
+    {
+      "path": "docs/protocol.md",
+      "sha256": "ce3938fc7efc4e12e5aaae8ce1b442567f254dca3845dea08dc74ada78b7c805",
+      "size_bytes": 2917
+    },
+    {
+      "path": "docs/results_mapping.md",
+      "sha256": "f26f478df48e5906a2e77e7b94aba8ff2996c8f7a6680ecf9689db037a4bf437",
+      "size_bytes": 2237
+    },
+    {
+      "path": "figures/Fig1_Overall_Stability.pdf",
+      "sha256": "740b3bdd75a1ce79f6acfb4f4d8cdd4f4ccfd43bf45033a07063aefb83a504a9",
+      "size_bytes": 23017
+    },
+    {
+      "path": "figures/Fig1_Overall_Stability.png",
+      "sha256": "0b0f434a9b2730974326bd2067e80b4d2d214a997dc6f30eb47ebd04d299e7b8",
+      "size_bytes": 105102
+    },
+    {
+      "path": "figures/Fig2_Cohort_Size.pdf",
+      "sha256": "d37db55044f95b77e716a32850b97286d3faa90754aadc8cc08c831af5ae0b76",
+      "size_bytes": 20935
+    },
+    {
+      "path": "figures/Fig2_Cohort_Size.png",
+      "sha256": "c6fb624d9e49b5cca9e8895d6f7f9055d1e4fa7cd783e3205ee916c953107025",
+      "size_bytes": 216195
+    },
+    {
+      "path": "figures/Fig3_Distribution.pdf",
+      "sha256": "67ab80992c697d9e1e683dd457a28e7a2de6d8b58b4cb59d05da22b742e52dac",
+      "size_bytes": 21981
+    },
+    {
+      "path": "figures/Fig3_Distribution.png",
+      "sha256": "979ea4c8ed3feefba418b2ceb616a73ae9ec4ea71c25d6a523915b842da2b6eb",
+      "size_bytes": 149270
+    },
+    {
+      "path": "figures/Fig4_CE.pdf",
+      "sha256": "a90f9b17c020db2fa630290ec132ae78bbe5c5e8f7231e98c6e4a9e649fdffd1",
+      "size_bytes": 22878
+    },
+    {
+      "path": "figures/Fig4_CE.png",
+      "sha256": "1f3cc65e6464d0ea34664e6f0709660953a40db20ba6696e5b9fe252d05021ba",
+      "size_bytes": 162822
+    },
+    {
+      "path": "figures/Fig5_Contamination.pdf",
+      "sha256": "490a52cda4648ebb88ce84a552a57f51fc5d8aa25a47292c71a24640f9ba2dc7",
+      "size_bytes": 22655
+    },
+    {
+      "path": "figures/Fig5_Contamination.png",
+      "sha256": "3b59b26beb63c6d02c08d923f9414ddfd0f4cfd8212b4d270800400643c8b9cf",
+      "size_bytes": 157339
+    },
+    {
+      "path": "figures/Fig6_Directional_Contamination.pdf",
+      "sha256": "f5dbee782e077c536991a936d8b0ce01bc52f01e55779686ecd4250c3cdce5d9",
+      "size_bytes": 19690
+    },
+    {
+      "path": "figures/Fig6_Directional_Contamination.png",
+      "sha256": "756d604d4943fbc4ff9219238ed5cfb5d60bef3f1733eb12822ed2d53fe51e7a",
+      "size_bytes": 100969
+    },
+    {
+      "path": "figures/Fig7_Rho_Sensitivity.pdf",
+      "sha256": "98dcfeb630575cefbea6a01b2eef4ddc19ee6deec09d265eb6a7422b306584c8",
+      "size_bytes": 22074
+    },
+    {
+      "path": "figures/Fig7_Rho_Sensitivity.png",
+      "sha256": "fc4730c94ae0b4434370d24576b026b17888841649babfb2ce998cfb7c83e83c",
+      "size_bytes": 168308
+    },
+    {
+      "path": "figures/Fig8_Secondary_Metrics.pdf",
+      "sha256": "35f8f10409f726fc7e46194ea7af2b35c7e11e1d25b879bce1adc5353df714b6",
+      "size_bytes": 31377
+    },
+    {
+      "path": "figures/Fig8_Secondary_Metrics.png",
+      "sha256": "66593eef5a67ba0131d3db40a242da9c43df27f96bbcc47cb88f7468745d419f",
+      "size_bytes": 273732
+    },
+    {
+      "path": "results/primary/primary_cell_results.csv",
+      "sha256": "817dee8ab643469aca72520898c295a92d9fe9db2a27114a52cfa75a57eed951",
+      "size_bytes": 2098753
+    },
+    {
+      "path": "results/primary/primary_cell_results.parquet",
+      "sha256": "5e57be75c21936ef5f37780c4b50fd5b3d02033241aaaff8e37f0ceb47d26af1",
+      "size_bytes": 694151
+    },
+    {
+      "path": "results/primary/primary_summary.csv",
+      "sha256": "b81843a9a73dd412b336a15aec8977896c0a05dce33881292613fc1f0d0cf9f3",
+      "size_bytes": 985
+    },
+    {
+      "path": "results/primary/primary_summary.parquet",
+      "sha256": "2f4dc0b3474d38ff5bd6c0e21488c4d0deb7d520be1097ae00dd1b05ce14b7e0",
+      "size_bytes": 6679
+    },
+    {
+      "path": "results/primary/primary_tables.xlsx",
+      "sha256": "aa51f69ee5842db73bf43c5c4bafb1a0da312abb6c71f99702d8d9fdbbb9d71d",
+      "size_bytes": 10333
+    },
+    {
+      "path": "results/rho_sensitivity/rho_cell_results.csv",
+      "sha256": "4aa8f4d1e232c90406d831a338cd0492b77e36be295c9ec92a6fdbc4dd4792bd",
+      "size_bytes": 892179
+    },
+    {
+      "path": "results/rho_sensitivity/rho_cell_results.parquet",
+      "sha256": "1b65d062c33b5305fe3dae94e252e87ea93ca92eee1619aceedc909c48d50327",
+      "size_bytes": 306651
+    },
+    {
+      "path": "results/rho_sensitivity/rho_summary.csv",
+      "sha256": "5d1e895eadf749bfa895fb3e5b047ca7d500512c0e4e3bad4d19da97baae814a",
+      "size_bytes": 545
+    },
+    {
+      "path": "results/rho_sensitivity/rho_summary.parquet",
+      "sha256": "b3c9a27db32f97052951f9c6e0e995933dfbb4c453d5c33be7e08abd57aa688f",
+      "size_bytes": 4186
+    },
+    {
+      "path": "results/rho_sensitivity/rho_tables.xlsx",
+      "sha256": "34dadfd1c2b8cba5ddfe0e875b04d8dd717011946b27789d9a065e02f85381de",
+      "size_bytes": 5200
+    },
+    {
+      "path": "results/statistical_analysis/bootstrap.csv",
+      "sha256": "11682ace30bd1b862e05c72a0532d4344cd0a3914222458d80144a1bf632d062",
+      "size_bytes": 1462
+    },
+    {
+      "path": "results/statistical_analysis/diagnostics.csv",
+      "sha256": "bc962319c6246cf3531ebeaee793e659616bddcbb5bef044360fec68b7f76195",
+      "size_bytes": 812
+    },
+    {
+      "path": "results/statistical_analysis/friedman.csv",
+      "sha256": "71ed06c32ac90d9d34b9e7dbe9d511bce1cbff395316811fc48804712413e22c",
+      "size_bytes": 255
+    },
+    {
+      "path": "results/statistical_analysis/moderation.csv",
+      "sha256": "f9d10cc62a4808fc019899d259e2e2d94619e9ced894eccf715a9937c33ad3eb",
+      "size_bytes": 94294
+    },
+    {
+      "path": "results/statistical_analysis/pairwise.csv",
+      "sha256": "39aa0da63063ad9706f9b437c3a7fe896745527425ce78b82473eda84ac6af8a",
+      "size_bytes": 1839
+    },
+    {
+      "path": "results/validation/audit_report.txt",
+      "sha256": "931344bb3bdfc429851f72655d900e9e0df401eae6a38953b3032f12d72d1b37",
+      "size_bytes": 747
+    },
+    {
+      "path": "scripts/generate_figures.py",
+      "sha256": "3af026fbb6ffeff7973f73c74ab17fc8e48f4cd01d8e92c51b82cd96a452a127",
+      "size_bytes": 8937
+    },
+    {
+      "path": "scripts/generate_manifest.py",
+      "sha256": "df84a57d13e2cff8633507591f05cb30bf58d0a9766fb2d76d71b6168c45482a",
+      "size_bytes": 2043
+    },
+    {
+      "path": "scripts/run_primary.py",
+      "sha256": "a59cf1e53ac835cad1bb351749594df110249d7c743f38a80766158b77916f90",
+      "size_bytes": 5731
+    },
+    {
+      "path": "scripts/run_rho_sensitivity.py",
+      "sha256": "861a7ded2a7d51c2a6308173fea1ef1cbb65a1bd77ed60962dd71c35e6fe1933",
+      "size_bytes": 5355
+    },
+    {
+      "path": "scripts/run_statistics.py",
+      "sha256": "bd85c46e0dd15973ea190e48b3ae21455b4cf46357bac0856aaf2b371fc3ee32",
+      "size_bytes": 3151
+    },
+    {
+      "path": "scripts/validate_reproduction.py",
+      "sha256": "a28beb8216648eac71a805d110c9beb0a887eccc22b317816ff3e1ba1e06c27b",
+      "size_bytes": 4523
+    },
+    {
+      "path": "src/relative_grading/assessment.py",
+      "sha256": "2d5d28ec26d361b704a7834c8d1163864908170540335fc87234c1610cf74471",
+      "size_bytes": 2864
+    },
+    {
+      "path": "src/relative_grading/contamination.py",
+      "sha256": "df993f4c0cf55401babc4594d0daa5bee727073082f96ece3191c107b92dcf4e",
+      "size_bytes": 3658
+    },
+    {
+      "path": "src/relative_grading/distributions.py",
+      "sha256": "a4d35e36326ac9c418e129705a4b5b9595e61b6c6a496806f5aca434953ed19a",
+      "size_bytes": 2334
+    },
+    {
+      "path": "src/relative_grading/eligibility.py",
+      "sha256": "9c69f033c1d06fdae0b56aadf0fd3c505ac43bd6618f9062888bbcb70a64ef9d",
+      "size_bytes": 2196
+    },
+    {
+      "path": "src/relative_grading/grading.py",
+      "sha256": "967ad7f42be47584b7badc0cfb5473d624a8b56daf40fab44687126fe5c83119",
+      "size_bytes": 1901
+    },
+    {
+      "path": "src/relative_grading/metrics.py",
+      "sha256": "964662f3955edf5f68cc4c6e4418e57a686f31f173c09f759e9a0f229c6106df",
+      "size_bytes": 6189
+    },
+    {
+      "path": "src/relative_grading/reference.py",
+      "sha256": "f199f3110fc84059ca36d4264ff700a4d09a86c88246b0e7c85b07079c43ba38",
+      "size_bytes": 3162
+    },
+    {
+      "path": "src/relative_grading/sensitivity.py",
+      "sha256": "d7124ec6c65ea4f11e2d85c5072e6e0f70fca3d16b33be9a376c390f37584b2a",
+      "size_bytes": 1447
+    },
+    {
+      "path": "src/relative_grading/simulation.py",
+      "sha256": "e0e0ab78315b3a0ada49c92646282e198cf3ec3f7a783857737de8d5c4b383b2",
+      "size_bytes": 9707
+    },
+    {
+      "path": "src/relative_grading/__init__.py",
+      "sha256": "df3aa4b612d6ce3a4b3b7c7990b0f622cf328e7fc690cf5affff4c8601e9203e",
+      "size_bytes": 226
+    },
+    {
+      "path": "src/relative_grading/methods/base.py",
+      "sha256": "0a7902965d8c3fb21cee9af100d05e36779a0c458de09f3a0c8825779ffe395a",
+      "size_bytes": 819
+    },
+    {
+      "path": "src/relative_grading/methods/max_min.py",
+      "sha256": "9e4d28ae6e998af9ef6b5c8d744c908fa478e8d57766780d0a786683bfe5e2ff",
+      "size_bytes": 960
+    },
+    {
+      "path": "src/relative_grading/methods/mean_sd.py",
+      "sha256": "9043a6c45deb07676b102e76edfb4a933fe35aec2c8d18a5748014191b1c25e0",
+      "size_bytes": 1069
+    },
+    {
+      "path": "src/relative_grading/methods/median_mad.py",
+      "sha256": "ed6e53dba5bee63d38321010a8a3a70a6633ee46867065c18d9bd39cace3762e",
+      "size_bytes": 1322
+    },
+    {
+      "path": "src/relative_grading/methods/percentile.py",
+      "sha256": "10b41ec6c74a0eea7c64cf8a4153bfae0ff972a5764d9bebdb65767e9e1a2846",
+      "size_bytes": 1209
+    },
+    {
+      "path": "src/relative_grading/methods/q_factor.py",
+      "sha256": "07e14f1fa15abc7a6451d4b19e39f6ff7887dd03be39fe0c338c4a4201ca35e9",
+      "size_bytes": 876
+    },
+    {
+      "path": "src/relative_grading/methods/__init__.py",
+      "sha256": "3bd3a7881313036498c2add037045e05822fa2daf7952ee90b16787b042aed8f",
+      "size_bytes": 659
+    },
+    {
+      "path": "src/relative_grading/results/export.py",
+      "sha256": "70e8162b00aef1dde6b6cdda43a01b2a40f197aa2c698b8d711a2b3749f979c0",
+      "size_bytes": 890
+    },
+    {
+      "path": "src/relative_grading/results/summaries.py",
+      "sha256": "fee782360c64198a866e7abb82d6880f8604f5686efa611f0696f64489481db4",
+      "size_bytes": 2252
+    },
+    {
+      "path": "src/relative_grading/results/__init__.py",
+      "sha256": "78adca2f70d24c7205c7e6cc5ad3952bb7e394d7923e852b0d26dce04ab758f9",
+      "size_bytes": 284
+    },
+    {
+      "path": "src/relative_grading/statistics/bootstrap.py",
+      "sha256": "11eb34f00af963047bd78af0a5a61ed1c24704ed678bb3b870316f017e7feb5d",
+      "size_bytes": 1207
+    },
+    {
+      "path": "src/relative_grading/statistics/diagnostics.py",
+      "sha256": "49b5731add5b5bf137fff327669cba918c121e819369e2120f62d6f52435e402",
+      "size_bytes": 1946
+    },
+    {
+      "path": "src/relative_grading/statistics/friedman.py",
+      "sha256": "6995782d472a771561012c38a025f5e7354306504c23b27538fd4150a307968c",
+      "size_bytes": 2062
+    },
+    {
+      "path": "src/relative_grading/statistics/moderation.py",
+      "sha256": "297975a45f700d9bc164442ce41f1c51820f5918b223096ba7ddb42fa5205fd2",
+      "size_bytes": 4453
+    },
+    {
+      "path": "src/relative_grading/statistics/pairwise.py",
+      "sha256": "19f211ef99ee4bd6273230c310d9d19821479f3f18d2aebb4e24df8968e3bc92",
+      "size_bytes": 3705
+    },
+    {
+      "path": "src/relative_grading/statistics/__init__.py",
+      "sha256": "12f10a4c165189b77d35e07b34bd18ba0100b3da6364ffed635e6490f05483d8",
+      "size_bytes": 590
+    },
+    {
+      "path": "src/relative_grading/validation/equations.py",
+      "sha256": "7f313991fa61628fbf80eb87db0e98dbb00a19cfec3bc71951fb688981c7a685",
+      "size_bytes": 3160
+    },
+    {
+      "path": "src/relative_grading/validation/equivalence.py",
+      "sha256": "93a9171c2be43a4f78a040c4d043fc93d2a1f483998224985551d82db76a057c",
+      "size_bytes": 4400
+    },
+    {
+      "path": "src/relative_grading/validation/frozen_values.py",
+      "sha256": "723c2ead17456fe681e49ab9d542fa899ce233a3fcc8452c3cf85578c8552e52",
+      "size_bytes": 2599
+    },
+    {
+      "path": "src/relative_grading/validation/__init__.py",
+      "sha256": "fa0486f6f8c9ddd63d076197befd233e0542ec5db9a0f0bda12eb8e7f5a91342",
+      "size_bytes": 411
+    },
+    {
+      "path": "tests/test_competency.py",
+      "sha256": "392e396ccc92bc0ee547ac3c90adda690fdfe53c2d67871bd4c7a4094dbc92f1",
+      "size_bytes": 1287
+    },
+    {
+      "path": "tests/test_contamination.py",
+      "sha256": "145e59408bf850c51ae02ca063238190f900d3eaef0bead8d768b9b3b23c2beb",
+      "size_bytes": 1765
+    },
+    {
+      "path": "tests/test_distributions.py",
+      "sha256": "805796edc293af64c8752c4c697813e4a561f5e88c80684673f19e2b3f3ec7cb",
+      "size_bytes": 1625
+    },
+    {
+      "path": "tests/test_m1_equivalence.py",
+      "sha256": "cbc1ee89b1a5276eb4d937b46f22f252c3af8dd1b5ea64f060fb1ddb3e6258cd",
+      "size_bytes": 681
+    },
+    {
+      "path": "tests/test_methods.py",
+      "sha256": "6ab42035cb55448489da88f2aba41c266015b8564ad72d919fddd8d710f5aedd",
+      "size_bytes": 1463
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "sha256": "a765fedd32666f060e255eee40c08239d643319a313e7032af7edb8b16334dd4",
+      "size_bytes": 1601
+    },
+    {
+      "path": "tests/test_reproducibility.py",
+      "sha256": "be5f6a8fb3e9adda74abd7e63a5dcb3f296a9078489a549e5d2dd641d27bd7c5",
+      "size_bytes": 1426
+    }
+  ]
+}

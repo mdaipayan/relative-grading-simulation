@@ -1,0 +1,18 @@
+========================================
+RELATIVE GRADING REPRODUCIBILITY AUDIT
+========================================
+Primary cells:              2,100
+Replications/cell:          1,000
+Methods:                    5
+
+M1 (MeanSD) stability:     0.8618  (Frozen: 0.8601, diff: +0.0017)
+M2 (Percentile) stability:     0.8384  (Frozen: 0.8404, diff: -0.0020)
+M3 (MaxMin) stability:     0.8431  (Frozen: 0.8440, diff: -0.0009)
+M4 (QFactor) stability:     0.9240  (Frozen: 0.9276, diff: -0.0036)
+M5 (MedianMAD) stability:     0.8067  (Frozen: 0.7997, diff: +0.0070)
+
+Friedman chi-square:        4958.436  (Frozen: 5050.536)
+Kendall W:                  0.590    (Frozen: 0.601)
+
+STATUS: PASS
+========================================

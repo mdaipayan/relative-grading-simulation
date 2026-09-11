@@ -1,0 +1,17 @@
+# Reproducibility and Audit Configuration
+master_seed: 42
+
+frozen_values:
+  headline_stability:
+    MeanSD: 0.8601
+    Percentile: 0.8404
+    MaxMin: 0.8440
+    QFactor: 0.9276
+    MedianMAD: 0.7997
+  friedman:
+    chi_square: 5050.535584
+    kendall_w: 0.6013
+  tolerances:
+    stability_tolerance: 0.015
+    chi_square_relative_tolerance: 0.05
+    kendall_w_tolerance: 0.03

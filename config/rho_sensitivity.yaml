@@ -1,0 +1,58 @@
+# Rho Sensitivity Experiment Configuration (Frozen Step 8B)
+experiment_name: "rho_sensitivity"
+total_cells: 900
+replications_per_cell: 500
+reference_cohort_size: 100000
+
+rho_values:
+  - 0.0
+  - 0.3
+  - 0.6
+  - 0.8
+  - 0.9
+
+competency_threshold: 20.0
+
+cohort_sizes:
+  - 10
+  - 15
+  - 20
+  - 25
+  - 30
+  - 40
+  - 50
+  - 75
+  - 100
+  - 200
+
+distributions:
+  - "Normal"
+  - "Compressed Normal"
+  - "Uniform"
+  - "Right-skewed"
+  - "Left-skewed"
+  - "Bimodal"
+
+contamination_conditions:
+  - epsilon: 0.0
+    direction: "clean"
+  - epsilon: 0.05
+    direction: "lower"
+  - epsilon: 0.05
+    direction: "upper"
+
+assessment:
+  weight_internal: 0.40
+  weight_external: 0.60
+
+methods:
+  - "MeanSD"
+  - "Percentile"
+  - "MaxMin"
+  - "QFactor"
+  - "MedianMAD"
+
+grid:
+  min_score: 0
+  max_score: 100
+  step: 1
