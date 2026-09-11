@@ -28,12 +28,13 @@ This document defines the final checks required before tagging a publication rel
 - [x] M5 is identified as a proposed robust comparator.
 - [x] M4 is described as a study-specific computational operationalization.
 - [x] M2 is described as a study-specific calibrated empirical operationalization.
-- [ ] Bootstrap-resampling configuration has been reconciled with the final statistical-analysis record.
+- [x] Bootstrap-resampling provenance has been reconciled and documented; the frozen manuscript statistical record is preserved separately from current executable output.
 
 ## Metadata freeze
 
 - [x] Repository URL is correct in `CITATION.cff`.
-- [ ] Actual author names must replace the temporary `Study authors` entry before the public archival release.
+- [x] Final software author is identified as Daipayan Mandal in `CITATION.cff`.
+- [x] Package author metadata is synchronized in `pyproject.toml`.
 - [ ] Archival DOI must be added to `CITATION.cff` after DOI creation.
 - [ ] `reproducibility_manifest.json` must be regenerated after all final file changes.
 - [ ] `checksums.sha256` must be regenerated after all final file changes.
