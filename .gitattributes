@@ -1,0 +1,2 @@
+# Normalize text files in the repository to LF so checksums are portable.
+* text=auto eol=lf
