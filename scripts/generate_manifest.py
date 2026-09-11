@@ -23,11 +23,15 @@ def main():
     checksum_lines = []
 
     tracked_extensions = {".py", ".yaml", ".yml", ".md", ".txt", ".toml", ".cff", ".parquet", ".csv", ".xlsx", ".png", ".pdf"}
+    excluded_dirs = {".git", "__pycache__", ".pytest_cache", "venv", "env", "ENV", "build", "dist"}
 
     for root, dirs, files in os.walk(ROOT_DIR):
-        # Skip __pycache__ and pytest caches
-        if "__pycache__" in root or ".pytest_cache" in root or ".git" in root:
-            continue
+        # Prune non-release directories before descending into them. In
+        # particular, never hash local virtual environments.
+        dirs[:] = [
+            d for d in dirs
+            if d not in excluded_dirs and not d.startswith(".venv")
+        ]
 
         for f in files:
             p = Path(root) / f
@@ -41,6 +45,9 @@ def main():
                     "size_bytes": file_size,
                 })
                 checksum_lines.append(f"{file_hash}  {rel_path}\n")
+
+    manifest_records.sort(key=lambda r: r["path"])
+    checksum_lines.sort(key=lambda line: line.split("  ", 1)[1])
 
     manifest = {
         "generated_at": time.strftime("%Y-%m-%d %H:%M:%S"),
@@ -58,7 +65,7 @@ def main():
     with open(checksum_path, "w", encoding="utf-8") as f:
         f.writelines(checksum_lines)
 
-    print(f"Generated manifest with {len(manifest_records)} tracked files:")
+    print(f"Generated manifest with {len(manifest_records)} repository files:")
     print(f"  {manifest_path}")
     print(f"  {checksum_path}")
 
