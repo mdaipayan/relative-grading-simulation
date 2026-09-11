@@ -1,12 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
+message: "If you use this software, please cite the associated study and this software release."
 authors:
-  - family-names: "Author"
-    given-names: "Research"
-title: "Robust Relative Grading in Engineering Education: Reproducibility Simulation"
+  - name: "Study authors"
+title: "Relative Grading Simulation Framework"
 version: 1.0.0
 date-released: 2026-09-11
-url: "https://github.com/reproducible-grading/relative-grading-simulation"
+repository-code: "https://github.com/mdaipayan/relative-grading-simulation"
+url: "https://github.com/mdaipayan/relative-grading-simulation"
 keywords:
   - "relative grading"
   - "engineering education"
