@@ -19,7 +19,7 @@ This document defines the final checks required before tagging a publication rel
 - [x] Primary experiment: 2,100 cells, 1,000 replications per cell, reference cohort 100,000.
 - [x] Rho sensitivity: 900 cells, 500 replications per cell, CE = 20, reference cohort 100,000.
 - [x] Historical validation uses tolerances defined in `config/reproducibility.yaml`.
-- [ ] Final clean-environment reproduction executed immediately before release tag.
+- [x] Final clean-environment reproduction executed immediately before release tag.
 
 ## Documentation freeze
 
@@ -36,8 +36,8 @@ This document defines the final checks required before tagging a publication rel
 - [x] Final software author is identified as Daipayan Mandal in `CITATION.cff`.
 - [x] Package author metadata is synchronized in `pyproject.toml`.
 - [ ] Archival DOI must be added to `CITATION.cff` after DOI creation.
-- [ ] `reproducibility_manifest.json` must be regenerated after all final file changes.
-- [ ] `checksums.sha256` must be regenerated after all final file changes.
+- [x] `reproducibility_manifest.json` was regenerated after the final research-output changes and integrity-mechanism repair.
+- [x] `checksums.sha256` was regenerated after the final research-output changes and integrity-mechanism repair.
 
 ## Release rule
 
