@@ -1,0 +1,11 @@
+metric,method_1,method_2,mean_diff,ci_lower_95,ci_upper_95,bootstrap_resamples
+mean_grid_stability,MeanSD,Percentile,0.01975342403628117,0.018835,0.020636,5000
+mean_grid_stability,MeanSD,MaxMin,0.01613013605442177,0.013893,0.018295,5000
+mean_grid_stability,MeanSD,QFactor,-0.0675317006802721,-0.070344,-0.064837,5000
+mean_grid_stability,MeanSD,MedianMAD,0.06040755102040817,0.058598,0.062233,5000
+mean_grid_stability,Percentile,MaxMin,-0.003623287981859405,-0.005929,-0.001274,5000
+mean_grid_stability,Percentile,QFactor,-0.08728512471655328,-0.090282,-0.084291,5000
+mean_grid_stability,Percentile,MedianMAD,0.04065412698412699,0.039088,0.042202,5000
+mean_grid_stability,MaxMin,QFactor,-0.08366183673469388,-0.085763,-0.081577,5000
+mean_grid_stability,MaxMin,MedianMAD,0.04427741496598639,0.040803,0.047736,5000
+mean_grid_stability,QFactor,MedianMAD,0.1279392517006803,0.124014,0.132056,5000
