@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11 16:06:20",
+  "generated_at": "2026-09-11 16:20:41",
   "platform": "Windows-10-10.0.19045-SP0",
   "python_version": "3.12.0",
   "total_files": 96,
@@ -66,8 +66,8 @@
     },
     {
       "path": "docs/repository_publication_freeze.md",
-      "sha256": "0b4377d54f98b0b77de036b08ab703909b660cfb27365312e97b1023ef9c989f",
-      "size_bytes": 2514
+      "sha256": "9e663d032dedd580f858a2ff565f40270ce3231461e07fe9296f9a02ed4400ca",
+      "size_bytes": 2546
     },
     {
       "path": "docs/results_mapping.md",
