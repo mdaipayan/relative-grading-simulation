@@ -9,6 +9,10 @@ import time
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 
+# These generated integrity records describe the release; they must not hash
+# themselves because that would create a self-referential checksum problem.
+INTEGRITY_FILES = {"reproducibility_manifest.json", "checksums.sha256"}
+
 
 def get_sha256(filepath: Path) -> str:
     h = hashlib.sha256()
@@ -22,8 +26,14 @@ def main():
     manifest_records = []
     checksum_lines = []
 
-    tracked_extensions = {".py", ".yaml", ".yml", ".md", ".txt", ".toml", ".cff", ".parquet", ".csv", ".xlsx", ".png", ".pdf"}
-    excluded_dirs = {".git", "__pycache__", ".pytest_cache", "venv", "env", "ENV", "build", "dist"}
+    tracked_extensions = {
+        ".py", ".yaml", ".yml", ".md", ".txt", ".toml", ".cff",
+        ".parquet", ".csv", ".xlsx", ".png", ".pdf"
+    }
+    excluded_dirs = {
+        ".git", "__pycache__", ".pytest_cache", "venv", "env", "ENV",
+        ".venv", "build", "dist"
+    }
 
     for root, dirs, files in os.walk(ROOT_DIR):
         # Prune non-release directories before descending into them. In
@@ -34,6 +44,8 @@ def main():
         ]
 
         for f in files:
+            if f in INTEGRITY_FILES:
+                continue
             p = Path(root) / f
             if p.suffix in tracked_extensions:
                 rel_path = p.relative_to(ROOT_DIR).as_posix()
@@ -58,11 +70,12 @@ def main():
     }
 
     manifest_path = ROOT_DIR / "reproducibility_manifest.json"
-    with open(manifest_path, "w", encoding="utf-8") as f:
+    with open(manifest_path, "w", encoding="utf-8", newline="\n") as f:
         json.dump(manifest, f, indent=2)
+        f.write("\n")
 
     checksum_path = ROOT_DIR / "checksums.sha256"
-    with open(checksum_path, "w", encoding="utf-8") as f:
+    with open(checksum_path, "w", encoding="utf-8", newline="\n") as f:
         f.writelines(checksum_lines)
 
     print(f"Generated manifest with {len(manifest_records)} repository files:")
